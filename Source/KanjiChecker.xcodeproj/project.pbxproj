@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1B42D418CEC86000FB8424 /* kanjiChecker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B42D318CEC86000FB8424 /* kanjiChecker.icns */; };
-		1F1B42D618CEC8FD00FB8424 /* kanjiChecker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B42D518CEC8FD00FB8424 /* kanjiChecker.icns */; };
 		1F6006851866835200791281 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6006841866835200791281 /* Cocoa.framework */; };
 		1F6006CB186685D000791281 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6006BB186685D000791281 /* AppDelegate.m */; };
 		1F6006CD186685D000791281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6006C0186685D000791281 /* main.m */; };
@@ -23,9 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F1B42D018CEC69900FB8424 /* ApplicationIcon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = ApplicationIcon.iconset; sourceTree = "<group>"; };
-		1F1B42D318CEC86000FB8424 /* kanjiChecker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = kanjiChecker.icns; sourceTree = "<group>"; };
-		1F1B42D518CEC8FD00FB8424 /* kanjiChecker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = kanjiChecker.icns; sourceTree = "<group>"; };
 		1F6006811866835200791281 /* KanjiChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6006841866835200791281 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F6006871866835200791281 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,18 +63,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F1B42D218CEC86000FB8424 /* Application Icon */ = {
-			isa = PBXGroup;
-			children = (
-				1F1B42D318CEC86000FB8424 /* kanjiChecker.icns */,
-			);
-			path = "Application Icon";
-			sourceTree = "<group>";
-		};
 		1F6006781866835200791281 = {
 			isa = PBXGroup;
 			children = (
-				1F1B42D518CEC8FD00FB8424 /* kanjiChecker.icns */,
 				1F6DF844186C2FE1004C46BB /* KanjiChecker.entitlements */,
 				1F6006B9186685D000791281 /* Classes */,
 				1F6006BC186685D000791281 /* Config */,
@@ -154,8 +140,6 @@
 		1F6006C1186685D000791281 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1F1B42D218CEC86000FB8424 /* Application Icon */,
-				1F1B42D018CEC69900FB8424 /* ApplicationIcon.iconset */,
 				1F6006C2186685D000791281 /* MainMenu.xib */,
 				1F6006D31866860100791281 /* MainWindow.xib */,
 				1F6006C6186685D000791281 /* Credits.rtf */,
@@ -244,8 +228,6 @@
 				1F6006D51866860100791281 /* MainWindow.xib in Resources */,
 				1F6006D2186685D000791281 /* Images.xcassets in Resources */,
 				1F6006D0186685D000791281 /* Credits.rtf in Resources */,
-				1F1B42D418CEC86000FB8424 /* kanjiChecker.icns in Resources */,
-				1F1B42D618CEC8FD00FB8424 /* kanjiChecker.icns in Resources */,
 				1F6006D1186685D000791281 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +246,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%05u\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+			shellScript = "#!/bin/bash\nif [ \"${CONFIGURATION}\" != \"Debug\" ]; then\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%05u\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -395,6 +377,7 @@
 		1F6006B31866835200791281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KanjiChecker.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -410,6 +393,7 @@
 		1F6006B41866835200791281 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KanjiChecker.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -458,6 +442,7 @@
 		1F9D0F6718669D63008A6916 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KanjiChecker.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;

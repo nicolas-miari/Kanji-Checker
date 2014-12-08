@@ -1,38 +1,60 @@
-//
-//  MainWindowController.m
-//  KanjiChecker
-//
-//  Created by Nicolás Miari on 12/22/13.
-//  Copyright (c) 2013 Nicolas Miari. All rights reserved.
-//
+/*
+    MainWindowController.m
+    Kanji Checker
+
+    Created by Nicolás Miari on 2013-12-22.
+    Copyright (c) 2014 Nicolas Miari. All rights reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+ */
 
 #import "MainWindowController.h"
+
+#import "CustomTextView.h"
 
 
 // .............................................................................
 
-#define RedColor [NSColor color]
+//#define RedColor [NSColor color]
+
+
 // .............................................................................
 
 @implementation MainWindowController
 {
     NSUInteger  _audienceGrade;
     
-    NSArray* _gradeStrings;
+    NSArray*    _gradeStrings;
     
     NSFont*     _textViewFont;
 }
 
 // .............................................................................
 
-- (id)init
+- (instancetype) init
 {
-    if ((self = [super initWithWindowNibName:@"MainWindow" owner:self]))
-    {
-        // Initialization code here.
+    if ((self = [super initWithWindowNibName:@"MainWindow" owner:self])){
         
-        NSString* table = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Table"
-                                                                                             ofType:@"csv"]
+        NSString* tablePath = [[NSBundle mainBundle] pathForResource:@"Table"
+                                                              ofType:@"csv"];
+        
+        NSString* table = [NSString stringWithContentsOfFile:tablePath
                                                     encoding:NSUTF8StringEncoding
                                                        error:nil];
         
@@ -94,12 +116,27 @@
 
     [_textView setRichText:YES];
     
+    NSColor* blackColor = [NSColor colorWithDeviceRed:0.00f
+                                                green:0.00f
+                                                 blue:0.00f
+                                                alpha:1.00f];
+    
+    NSColor* greenColor = [NSColor colorWithDeviceRed:0.00f
+                                                green:0.66f
+                                                 blue:0.00f
+                                                alpha:1.00f];
+    
+    NSColor* redColor   = [NSColor colorWithDeviceRed:1.00f
+                                                green:0.00f
+                                                 blue:0.00f
+                                                alpha:1.00f];
+    
     // . .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
     // Check text and highlight
     
     NSString* inputText = [_textView string];
     
-    for (NSUInteger i=0; i < [inputText length]; i++) {
+    for (NSUInteger i = 0; i < [inputText length]; i++) {
         
         unichar character = [inputText characterAtIndex:i];
         
@@ -108,14 +145,12 @@
         
             NSString* characterString = [NSString stringWithFormat:@"%C", character];
             
-            //NSLog(@"Searching %@", characterString);
-            
             
             // Search character in tables within range
             
             BOOL found = NO;
             
-            for(NSUInteger i=0; i < _audienceGrade; i++){
+            for(NSUInteger i = 0; i < _audienceGrade; i++){
                 
                 NSString* gradeString = [_gradeStrings objectAtIndex:i];
             
@@ -126,27 +161,22 @@
             }
             
             if (found) {
-                NSColor* color = [NSColor colorWithDeviceRed:0.0
-                                                       green:0.66
-                                                        blue:0.0
-                                                       alpha:1.0];
+                // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                // [ A ] FOUND; paint it GREEN
                 
-                [_textView setTextColor:color
-                                  range:NSMakeRange(i, 1)];
+                [_textView setTextColor:greenColor range:NSMakeRange(i, 1)];
             }
             else{
-
-                NSColor* color = [NSColor colorWithDeviceRed:1.0
-                                                       green:0.0
-                                                        blue:0.0
-                                                       alpha:1.0];
+                // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                // [ B ] NOT FOUND; paint it RED
                 
-                [_textView setTextColor:color
-                                  range:NSMakeRange(i, 1)];
+                [_textView setTextColor:redColor range:NSMakeRange(i, 1)];
             }
         }
         else{
-            //
+            // Not Kanji; paint it BLACK
+            
+            [_textView setTextColor:blackColor range:NSMakeRange(i, 1)];
         }
     }
 }
@@ -167,8 +197,10 @@
 
 // .............................................................................
 
-- (BOOL) textView:(NSTextView*) textView shouldChangeTextInRange:(NSRange) affectedCharRange
-replacementString:(NSString*) replacementString
+- (BOOL)        textView:(NSTextView*) textView
+ shouldChangeTextInRange:(NSRange) affectedCharRange
+       replacementString:(NSString*) replacementString
+// (These are the method names that suck in cocoa)
 {
     if (affectedCharRange.length || [replacementString length]) {
     
@@ -181,6 +213,7 @@ replacementString:(NSString*) replacementString
     
     return YES;
 }
+
 // .............................................................................
 
 - (void) textViewDidChangeSelection:(NSNotification *)notification

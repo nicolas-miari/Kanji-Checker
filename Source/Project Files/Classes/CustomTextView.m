@@ -1,10 +1,28 @@
-//
-//  CustomTextView.m
-//  KanjiChecker
-//
-//  Created by Nicolás Miari on 12/22/13.
-//  Copyright (c) 2013 Nicolas Miari. All rights reserved.
-//
+/*
+    CustomTextView.m
+    Kanji Checker
+
+    Created by Nicolás Miari on 2013-12-22.
+    Copyright (c) 2014 Nicolas Miari. All rights reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+ */
 
 #import "CustomTextView.h"
 
@@ -13,14 +31,38 @@
 
 @implementation CustomTextView
 {
-    
+    // (no ivars yet)
 }
 
 // .............................................................................
 
-- (void) paste:(id)sender
+- (void) paste:(id) sender
 {
+    // Remove any extraneous formatting (font size, color etc.)
+    
     [super pasteAsPlainText:sender];
+}
+
+// .............................................................................
+
+- (void) awakeFromNib
+{
+    [super setTextContainerInset:NSMakeSize(5.0f, 5.0f)];
+    
+    // Based on this answer: http://stackoverflow.com/a/1952692/433373
+}
+
+// .............................................................................
+
+- (NSPoint) textContainerOrigin
+{
+    NSPoint origin = [super textContainerOrigin];
+    
+    NSPoint newOrigin = NSMakePoint(origin.x + 5.0f, origin.y + 5.0f);
+    
+    return newOrigin;
+    
+    // Based on this answer: http://stackoverflow.com/a/1952692/433373
 }
 
 // .............................................................................
