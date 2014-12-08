@@ -1,4 +1,4 @@
-Kanji-Checker
+Kanji Checker
 =============
 
 This simple Mac app scans entered japanese text and highlights its chinese characters (*kanji*) according to the school year in which they are taught in Japan. This tells you at a glance if your japanese text can be  easily read by a given audience.  
