@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7636DB243DAB0A002A0136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636DA243DAB0A002A0136 /* AppDelegate.swift */; };
+		1F7636DD243DAB0A002A0136 /* CheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636DC243DAB0A002A0136 /* CheckerViewController.swift */; };
+		1F7636DF243DAB0D002A0136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7636DE243DAB0D002A0136 /* Assets.xcassets */; };
+		1F7636E2243DAB0E002A0136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7636E0243DAB0E002A0136 /* Main.storyboard */; };
+		1F7636F0243DAD76002A0136 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636EF243DAD76002A0136 /* InputTextView.swift */; };
+		1F7636F2243DAE3E002A0136 /* Table.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F7636F1243DAE3E002A0136 /* Table.json */; };
+		1F7636F4243DB202002A0136 /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636F3243DB202002A0136 /* Checker.swift */; };
+		1F7636F6243DB73B002A0136 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636F5243DB73B002A0136 /* ProgressViewController.swift */; };
+		1F7636F8243DCED6002A0136 /* Checker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7636FA243DCED6002A0136 /* Checker.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F7636D7243DAB0A002A0136 /* KanjiChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7636DA243DAB0A002A0136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F7636DC243DAB0A002A0136 /* CheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerViewController.swift; sourceTree = "<group>"; };
+		1F7636DE243DAB0D002A0136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7636E1243DAB0E002A0136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F7636E3243DAB0E002A0136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7636E4243DAB0E002A0136 /* KanjiChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KanjiChecker.entitlements; sourceTree = "<group>"; };
+		1F7636EF243DAD76002A0136 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		1F7636F1243DAE3E002A0136 /* Table.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Table.json; sourceTree = "<group>"; };
+		1F7636F3243DB202002A0136 /* Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checker.swift; sourceTree = "<group>"; };
+		1F7636F5243DB73B002A0136 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		1F7636F7243DCED0002A0136 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		1F7636F9243DCED6002A0136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checker.storyboard; sourceTree = "<group>"; };
+		1F7636FC243DCEDC002A0136 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Checker.strings; sourceTree = "<group>"; };
+		1F7636FE243DCEE0002A0136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Checker.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7636D4243DAB0A002A0136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F7636CE243DAB0A002A0136 = {
+			isa = PBXGroup;
+			children = (
+				1F7636D9243DAB0A002A0136 /* KanjiChecker */,
+				1F7636D8243DAB0A002A0136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F7636D8243DAB0A002A0136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F7636D7243DAB0A002A0136 /* KanjiChecker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7636D9243DAB0A002A0136 /* KanjiChecker */ = {
+			isa = PBXGroup;
+			children = (
+				1F7636E3243DAB0E002A0136 /* Info.plist */,
+				1F7636E4243DAB0E002A0136 /* KanjiChecker.entitlements */,
+				1F7636DA243DAB0A002A0136 /* AppDelegate.swift */,
+				1F7636FF243DCFB0002A0136 /* View */,
+				1F763700243DCFC0002A0136 /* Service */,
+				1F763701243DCFCA002A0136 /* Storyboards */,
+				1F7636DE243DAB0D002A0136 /* Assets.xcassets */,
+				1F7636F1243DAE3E002A0136 /* Table.json */,
+			);
+			path = KanjiChecker;
+			sourceTree = "<group>";
+		};
+		1F7636FF243DCFB0002A0136 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F7636DC243DAB0A002A0136 /* CheckerViewController.swift */,
+				1F7636F5243DB73B002A0136 /* ProgressViewController.swift */,
+				1F7636EF243DAD76002A0136 /* InputTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F763700243DCFC0002A0136 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F7636F3243DB202002A0136 /* Checker.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1F763701243DCFCA002A0136 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F7636E0243DAB0E002A0136 /* Main.storyboard */,
+				1F7636FA243DCED6002A0136 /* Checker.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7636D6243DAB0A002A0136 /* KanjiChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7636E7243DAB0E002A0136 /* Build configuration list for PBXNativeTarget "KanjiChecker" */;
+			buildPhases = (
+				1F7636D3243DAB0A002A0136 /* Sources */,
+				1F7636D4243DAB0A002A0136 /* Frameworks */,
+				1F7636D5243DAB0A002A0136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanjiChecker;
+			productName = KanjiChecker;
+			productReference = 1F7636D7243DAB0A002A0136 /* KanjiChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F7636CF243DAB0A002A0136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Nicolás Miari";
+				TargetAttributes = {
+					1F7636D6243DAB0A002A0136 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 1F7636D2243DAB0A002A0136 /* Build configuration list for PBXProject "KanjiChecker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 1F7636CE243DAB0A002A0136;
+			productRefGroup = 1F7636D8243DAB0A002A0136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7636D6243DAB0A002A0136 /* KanjiChecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F7636D5243DAB0A002A0136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7636DF243DAB0D002A0136 /* Assets.xcassets in Resources */,
+				1F7636F8243DCED6002A0136 /* Checker.storyboard in Resources */,
+				1F7636F2243DAE3E002A0136 /* Table.json in Resources */,
+				1F7636E2243DAB0E002A0136 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7636D3243DAB0A002A0136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7636F6243DB73B002A0136 /* ProgressViewController.swift in Sources */,
+				1F7636F0243DAD76002A0136 /* InputTextView.swift in Sources */,
+				1F7636F4243DB202002A0136 /* Checker.swift in Sources */,
+				1F7636DD243DAB0A002A0136 /* CheckerViewController.swift in Sources */,
+				1F7636DB243DAB0A002A0136 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F7636E0243DAB0E002A0136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7636E1243DAB0E002A0136 /* Base */,
+				1F7636F7243DCED0002A0136 /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F7636FA243DCED6002A0136 /* Checker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7636F9243DCED6002A0136 /* Base */,
+				1F7636FC243DCEDC002A0136 /* ja */,
+				1F7636FE243DCEE0002A0136 /* en */,
+			);
+			name = Checker.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F7636E5243DAB0E002A0136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_VERSION_SUFFIX = 1002;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F7636E6243DAB0E002A0136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_VERSION_SUFFIX = 1002;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1F7636E8243DAB0E002A0136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KanjiChecker/KanjiChecker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KanjiChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasmiari.kanji-checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F7636E9243DAB0E002A0136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KanjiChecker/KanjiChecker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KanjiChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolasmiari.kanji-checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7636D2243DAB0A002A0136 /* Build configuration list for PBXProject "KanjiChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7636E5243DAB0E002A0136 /* Debug */,
+				1F7636E6243DAB0E002A0136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7636E7243DAB0E002A0136 /* Build configuration list for PBXNativeTarget "KanjiChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7636E8243DAB0E002A0136 /* Debug */,
+				1F7636E9243DAB0E002A0136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F7636CF243DAB0A002A0136 /* Project object */;
+}

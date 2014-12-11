@@ -1,0 +1,30 @@
+
+/* Class = "NSMenuItem"; title = "First Grade"; ObjectID = "1og-ZJ-iZQ"; */
+"1og-ZJ-iZQ.title" = "１年生";
+
+/* Class = "NSMenuItem"; title = "Third Grade"; ObjectID = "BQd-ym-Hyl"; */
+"BQd-ym-Hyl.title" = "３年生";
+
+/* Class = "NSMenuItem"; title = "Fifth Grade"; ObjectID = "J6J-XB-By5"; */
+"J6J-XB-By5.title" = "５年生";
+
+/* Class = "NSTextFieldCell"; title = "Audience:"; ObjectID = "KVJ-Kw-0ov"; */
+"KVJ-Kw-0ov.title" = "ターゲット読者：";
+
+/* Class = "NSMenuItem"; title = "Sixth Grade"; ObjectID = "Ki0-WX-H3Z"; */
+"Ki0-WX-H3Z.title" = "６年生";
+
+/* Class = "NSTextFieldCell"; title = "Checking..."; ObjectID = "Tdr-7K-Jx2"; */
+"Tdr-7K-Jx2.title" = "チェック中...";
+
+/* Class = "NSViewController"; title = "Kanji Checker"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "Kanji Checker";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "bg6-t9-QCF"; */
+"bg6-t9-QCF.title" = "チェック";
+
+/* Class = "NSMenuItem"; title = "Second Grade"; ObjectID = "iDz-Sq-Ta0"; */
+"iDz-Sq-Ta0.title" = "２年生";
+
+/* Class = "NSMenuItem"; title = "Fourth Grade"; ObjectID = "yWe-RG-dgv"; */
+"yWe-RG-dgv.title" = "４年生";

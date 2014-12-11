@@ -1,0 +1,30 @@
+
+/* Class = "NSMenuItem"; title = "First Grade"; ObjectID = "1og-ZJ-iZQ"; */
+"1og-ZJ-iZQ.title" = "First Grade";
+
+/* Class = "NSMenuItem"; title = "Third Grade"; ObjectID = "BQd-ym-Hyl"; */
+"BQd-ym-Hyl.title" = "Third Grade";
+
+/* Class = "NSMenuItem"; title = "Fifth Grade"; ObjectID = "J6J-XB-By5"; */
+"J6J-XB-By5.title" = "Fifth Grade";
+
+/* Class = "NSTextFieldCell"; title = "Audience:"; ObjectID = "KVJ-Kw-0ov"; */
+"KVJ-Kw-0ov.title" = "Audience:";
+
+/* Class = "NSMenuItem"; title = "Sixth Grade"; ObjectID = "Ki0-WX-H3Z"; */
+"Ki0-WX-H3Z.title" = "Sixth Grade";
+
+/* Class = "NSTextFieldCell"; title = "Checking..."; ObjectID = "Tdr-7K-Jx2"; */
+"Tdr-7K-Jx2.title" = "Checking...";
+
+/* Class = "NSViewController"; title = "Kanji Checker"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "Kanji Checker";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "bg6-t9-QCF"; */
+"bg6-t9-QCF.title" = "Check";
+
+/* Class = "NSMenuItem"; title = "Second Grade"; ObjectID = "iDz-Sq-Ta0"; */
+"iDz-Sq-Ta0.title" = "Second Grade";
+
+/* Class = "NSMenuItem"; title = "Fourth Grade"; ObjectID = "yWe-RG-dgv"; */
+"yWe-RG-dgv.title" = "Fourth Grade";
