@@ -17,6 +17,8 @@
 		1F6006D2186685D000791281 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6006CA186685D000791281 /* Images.xcassets */; };
 		1F6006D51866860100791281 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6006D31866860100791281 /* MainWindow.xib */; };
 		1F6006D8186686C700791281 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6006D7186686C700791281 /* MainWindowController.m */; };
+		1F7639171A41971F0083BD59 /* Jouyou-minus-kyouiku.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1F7639151A41971F0083BD59 /* Jouyou-minus-kyouiku.csv */; };
+		1F7639181A41971F0083BD59 /* Joyo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1F7639161A41971F0083BD59 /* Joyo.csv */; };
 		1F9D0F6018669978008A6916 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D0F5F18669978008A6916 /* CustomTextView.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		1F6006D6186686C700791281 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		1F6006D7186686C700791281 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		1F6DF844186C2FE1004C46BB /* KanjiChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KanjiChecker.entitlements; sourceTree = "<group>"; };
+		1F7639151A41971F0083BD59 /* Jouyou-minus-kyouiku.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jouyou-minus-kyouiku.csv"; sourceTree = "<group>"; };
+		1F7639161A41971F0083BD59 /* Joyo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Joyo.csv; sourceTree = "<group>"; };
 		1F9D0F5E18669978008A6916 /* CustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
 		1F9D0F5F18669978008A6916 /* CustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 		1F9D0F6118669ACD008A6916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				1F6006C5186685D000791281 /* Table.csv */,
+				1F7639151A41971F0083BD59 /* Jouyou-minus-kyouiku.csv */,
+				1F7639161A41971F0083BD59 /* Joyo.csv */,
 			);
 			path = "Default Table";
 			sourceTree = "<group>";
@@ -225,6 +231,8 @@
 			files = (
 				1F6006CF186685D000791281 /* Table.csv in Resources */,
 				1F6006CE186685D000791281 /* MainMenu.xib in Resources */,
+				1F7639171A41971F0083BD59 /* Jouyou-minus-kyouiku.csv in Resources */,
+				1F7639181A41971F0083BD59 /* Joyo.csv in Resources */,
 				1F6006D51866860100791281 /* MainWindow.xib in Resources */,
 				1F6006D2186685D000791281 /* Images.xcassets in Resources */,
 				1F6006D0186685D000791281 /* Credits.rtf in Resources */,
