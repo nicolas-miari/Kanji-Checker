@@ -27,11 +27,7 @@
 #import "MainWindowController.h"
 
 #import "CustomTextView.h"
-
-
-// .............................................................................
-
-//#define RedColor [NSColor color]
+#import "AboutWindowController.h"
 
 
 // .............................................................................
@@ -43,6 +39,8 @@
     NSArray*    _gradeStrings;
     
     NSFont*     _textViewFont;
+    
+    NSColor* _defaultTextColor;
 }
 
 // .............................................................................
@@ -59,6 +57,18 @@
                                                        error:nil];
         
         _gradeStrings = [table componentsSeparatedByString:@"\n"];
+        
+        
+        
+        // Get notified when dark mode changes: (Taken from: http://stackoverflow.com/a/26472651/433373 )
+        
+        NSDistributedNotificationCenter* distributedNotificationCenter = [NSDistributedNotificationCenter defaultCenter];
+        
+        [distributedNotificationCenter addObserver:self
+                                          selector:@selector(darkModeChanged:)
+                                              name:@"AppleInterfaceThemeChangedNotification"
+                                            object:nil];
+
     }
     
     return self;
@@ -66,9 +76,20 @@
 
 // .............................................................................
 
+#pragma mark - NSWindowController
+
+
 - (void) windowDidLoad
 {
     [super windowDidLoad];
+    
+    
+    // Detect user dark mode and changes:
+    
+    if ([self darkModeOn]) {
+        [self darkModeChanged:nil];
+    }
+    
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     
@@ -104,7 +125,39 @@
     
 }
 
+
 // .............................................................................
+
+#pragma mark - Notification Handlers
+
+
+- (void) darkModeChanged:(NSNotification*) notification
+{
+    // Update appearance of all open windows:
+    
+    NSAppearance* appearance;
+    NSColor* textColor;
+    
+    if ([self darkModeOn]) {
+        appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
+        _defaultTextColor = [NSColor whiteColor];
+    }
+    else{
+        appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+        _defaultTextColor = [NSColor blackColor];
+    }
+    
+    _textView.appearance = appearance;
+    _textView.textColor  = _defaultTextColor;
+    
+    self.window.appearance = appearance;
+    [[AboutWindowController defaultController] window].appearance = appearance;
+}
+
+// .............................................................................
+
+#pragma mark - Control Actions
+
 
 - (IBAction) check:(id) sender
 {
@@ -176,7 +229,7 @@
         else{
             // Not Kanji; paint it BLACK
             
-            [_textView setTextColor:blackColor range:NSMakeRange(i, 1)];
+            [_textView setTextColor:_defaultTextColor range:NSMakeRange(i, 1)];
         }
     }
 }
@@ -197,6 +250,27 @@
 
 // .............................................................................
 
+#pragma mark -
+
+- (BOOL) darkModeOn
+{
+    // Taken from:
+    // http://stackoverflow.com/a/26472651/433373
+    
+    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] persistentDomainForName:NSGlobalDomain];
+    
+    id style = [dict objectForKey:@"AppleInterfaceStyle"];
+    
+    BOOL darkModeOn = ( style && [style isKindOfClass:[NSString class]] && NSOrderedSame == [style caseInsensitiveCompare:@"dark"]);
+    
+    return darkModeOn;
+}
+
+// .............................................................................
+
+#pragma mark - NSTextViewDelegate
+
+
 - (BOOL)        textView:(NSTextView*) textView
  shouldChangeTextInRange:(NSRange) affectedCharRange
        replacementString:(NSString*) replacementString
@@ -208,7 +282,7 @@
     
         [_textView setRichText:NO];
         
-        [_textView setTextColor:[NSColor blackColor]];
+        [_textView setTextColor:_defaultTextColor];
     }
     
     return YES;

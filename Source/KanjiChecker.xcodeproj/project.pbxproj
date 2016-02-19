@@ -18,6 +18,8 @@
 		1F6006D51866860100791281 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6006D31866860100791281 /* MainWindow.xib */; };
 		1F6006D8186686C700791281 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6006D7186686C700791281 /* MainWindowController.m */; };
 		1F9D0F6018669978008A6916 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D0F5F18669978008A6916 /* CustomTextView.m */; };
+		37ED951C1C770D0500BE1DCA /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37ED95191C770D0500BE1DCA /* AboutWindow.xib */; };
+		37ED951D1C770D0500BE1DCA /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ED951B1C770D0500BE1DCA /* AboutWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		1F9D0F6518669B90008A6916 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		1FD3D48E187FC2BF007DED92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		1FD3D490187FC2C1007DED92 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		37ED95191C770D0500BE1DCA /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		37ED951A1C770D0500BE1DCA /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
+		37ED951B1C770D0500BE1DCA /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 				1F6006D7186686C700791281 /* MainWindowController.m */,
 				1F9D0F5E18669978008A6916 /* CustomTextView.h */,
 				1F9D0F5F18669978008A6916 /* CustomTextView.m */,
+				37ED95181C770D0500BE1DCA /* About */,
 			);
 			name = Classes;
 			path = "Project Files/Classes";
@@ -157,6 +163,16 @@
 				1F6006C5186685D000791281 /* Table.csv */,
 			);
 			path = "Default Table";
+			sourceTree = "<group>";
+		};
+		37ED95181C770D0500BE1DCA /* About */ = {
+			isa = PBXGroup;
+			children = (
+				37ED95191C770D0500BE1DCA /* AboutWindow.xib */,
+				37ED951A1C770D0500BE1DCA /* AboutWindowController.h */,
+				37ED951B1C770D0500BE1DCA /* AboutWindowController.m */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ED951C1C770D0500BE1DCA /* AboutWindow.xib in Resources */,
 				1F6006CF186685D000791281 /* Table.csv in Resources */,
 				1F6006CE186685D000791281 /* MainMenu.xib in Resources */,
 				1F6006D51866860100791281 /* MainWindow.xib in Resources */,
@@ -256,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6006D8186686C700791281 /* MainWindowController.m in Sources */,
+				37ED951D1C770D0500BE1DCA /* AboutWindowController.m in Sources */,
 				1F6006CD186685D000791281 /* main.m in Sources */,
 				1F9D0F6018669978008A6916 /* CustomTextView.m in Sources */,
 				1F6006CB186685D000791281 /* AppDelegate.m in Sources */,

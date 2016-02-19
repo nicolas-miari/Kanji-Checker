@@ -28,6 +28,8 @@
 
 #import "MainWindowController.h"
 
+#import "AboutWindowController.h"
+
 
 // .............................................................................
 
@@ -43,6 +45,13 @@
     _mainWindowController = [MainWindowController new];
     
     [_mainWindowController showWindow:self];
+}
+
+// .............................................................................
+
+- (IBAction)about:(id)sender
+{
+    [[AboutWindowController defaultController].window orderFront:self];
 }
 
 // .............................................................................
