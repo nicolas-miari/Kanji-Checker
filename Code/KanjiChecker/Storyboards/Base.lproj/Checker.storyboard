@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,21 +11,21 @@
             <objects>
                 <viewController title="Kanji Checker" id="XfG-lQ-9wD" customClass="CheckerViewController" customModule="KanjiChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="943" height="937"/>
+                        <rect key="frame" x="0.0" y="0.0" width="813" height="751"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHH-Fa-fE1">
-                                <rect key="frame" x="0.0" y="62" width="943" height="875"/>
+                                <rect key="frame" x="0.0" y="62" width="813" height="689"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="GJR-ap-c3S">
-                                    <rect key="frame" x="0.0" y="0.0" width="943" height="875"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="813" height="689"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" fieldEditor="YES" usesFontPanel="YES" spellingCorrection="YES" smartInsertDelete="YES" id="qXX-K1-oWi" customClass="InputTextView" customModule="KanjiChecker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="943" height="875"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="813" height="689"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="943" height="875"/>
+                                            <size key="minSize" width="813" height="689"/>
                                             <size key="maxSize" width="943" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -14144,7 +14145,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="bFa-lc-Zbq">
-                                    <rect key="frame" x="927" y="0.0" width="16" height="875"/>
+                                    <rect key="frame" x="797" y="0.0" width="16" height="689"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -14180,7 +14181,7 @@
                                 </connections>
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ThG-gE-E8f">
-                                <rect key="frame" x="789" y="13" width="140" height="32"/>
+                                <rect key="frame" x="659" y="13" width="140" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="mPT-tS-5kS"/>
                                 </constraints>
@@ -14196,7 +14197,7 @@ DQ
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-oX-ou3">
-                                <rect key="frame" x="0.0" y="59" width="943" height="5"/>
+                                <rect key="frame" x="0.0" y="59" width="813" height="5"/>
                             </box>
                         </subviews>
                         <constraints>
@@ -14224,7 +14225,7 @@ DQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156.5" y="983.5"/>
+            <point key="canvasLocation" x="-221.5" y="890.5"/>
         </scene>
         <!--Progress View Controller-->
         <scene sceneID="967-dg-dOq">

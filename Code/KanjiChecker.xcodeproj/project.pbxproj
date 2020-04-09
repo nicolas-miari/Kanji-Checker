@@ -16,6 +16,7 @@
 		1F7636F4243DB202002A0136 /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636F3243DB202002A0136 /* Checker.swift */; };
 		1F7636F6243DB73B002A0136 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7636F5243DB73B002A0136 /* ProgressViewController.swift */; };
 		1F7636F8243DCED6002A0136 /* Checker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7636FA243DCED6002A0136 /* Checker.storyboard */; };
+		1FD19630243EAC5400AE1839 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD1962F243EAC5400AE1839 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		1F7636F9243DCED6002A0136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checker.storyboard; sourceTree = "<group>"; };
 		1F7636FC243DCEDC002A0136 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Checker.strings; sourceTree = "<group>"; };
 		1F7636FE243DCEE0002A0136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Checker.strings; sourceTree = "<group>"; };
+		1FD1962F243EAC5400AE1839 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		1FD19632243EAE7E00AE1839 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				1F7636DC243DAB0A002A0136 /* CheckerViewController.swift */,
 				1F7636F5243DB73B002A0136 /* ProgressViewController.swift */,
 				1F7636EF243DAD76002A0136 /* InputTextView.swift */,
+				1FD1962F243EAC5400AE1839 /* HelpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7636F6243DB73B002A0136 /* ProgressViewController.swift in Sources */,
+				1FD19630243EAC5400AE1839 /* HelpViewController.swift in Sources */,
 				1F7636F0243DAD76002A0136 /* InputTextView.swift in Sources */,
 				1F7636F4243DB202002A0136 /* Checker.swift in Sources */,
 				1F7636DD243DAB0A002A0136 /* CheckerViewController.swift in Sources */,
@@ -194,6 +199,7 @@
 			children = (
 				1F7636E1243DAB0E002A0136 /* Base */,
 				1F7636F7243DCED0002A0136 /* ja */,
+				1FD19632243EAE7E00AE1839 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -215,7 +221,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_VERSION_SUFFIX = 1002;
+				BUILD_VERSION_SUFFIX = 1003;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -278,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_VERSION_SUFFIX = 1002;
+				BUILD_VERSION_SUFFIX = 1003;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
