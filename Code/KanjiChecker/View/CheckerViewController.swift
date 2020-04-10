@@ -32,10 +32,10 @@ class CheckerViewController: NSViewController {
     @IBAction func check(_ sender: Any) {
 
         guard let storyboard = self.storyboard else {
-            fatalError("FUCK YOU")
+            fatalError("Storyboard inconsistency")
         }
         guard let progress = storyboard.instantiateController(withIdentifier: "Progress") as? ProgressViewController else {
-            fatalError("Fuck You")
+            fatalError("Storyboard inconsistency")
         }
 
         let text = textView.attributedString()
