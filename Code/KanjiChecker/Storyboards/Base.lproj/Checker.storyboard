@@ -31,7 +31,7 @@
                                                 <fragment content=" ">
                                                     <attributes>
                                                         <color key="NSColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                        <font key="NSFont" size="15" name="HiraginoSansCNS-W3"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
